@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>test website</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/button.min.css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<script src="https://use.fontawesome.com/58567dd66f.js"></script>
+	<style>
+
+		/* Sections
+		 * --------------------------------------- */
+		#section0 {
+			background-image: url(imgs/palms.jpeg);
+			background-size: cover;
+ 			padding: 6% 0 0 0;
+ 		}
+		#section1 {
+			background-image: url(imgs/sky.jpeg);
+			background-size: cover;
+			padding: 6% 0 0 0;
+		}
+		#section2 {
+			background-image: url(imgs/flowers.jpeg);
+			background-size: cover;
+			padding: 6% 0 0 0;
+		}
+		#section3 {
+			background-image: url(imgs/palms.jpeg);
+			background-size: cover;
+			padding: 6% 0 0 0;
+		}
+
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				 anchors: ['start-info', 'about-info', 'service-info', 'actual-info', 'contact-info'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+
+<ul id="menu">
+	<div class="testcenter">
+		<a href="#start-info"><button class="ui massive secondary button">
+			Home
+		</button></a>
+		<a href="#about-info"><button class="ui massive secondary button">
+			Projects
+		</button></a>
+		<a href="#service-info"><button class="ui massive secondary button">
+			Resume
+		</button></a>
+		<a href="#actual-info"><button class="ui massive secondary button">
+			Contact
+		</button></a>
+	</div>
+</ul>
+
+
+<div id="fullpage">
+	<div class="section active" id="section0">
+		<div class=title>
+			<a href="#about-info">
+				<h1 class="ari">ARI INGBER</h1>
+				<h2 class="underari">web developer</h2>
+			</a>
+		</div>
+		 <input type="hidden" name="id" value="1" />
+		 <div id="footer"><a href="#about-info"><i class="fa fa-long-arrow-down" aria-hidden="true" style="font-size:50px;"></i></a></div>
+	</div>
+	<div class="section" id="section1">
+		<div class="slide">
+			<div class="intro">
+				<h1 class="ari">PROJECTS<h1>
+				<img class="projects" src="imgs/one2.gif" alt="simple">
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<a href="https://textbub.herokuapp.com/">
+					<h1 class="ari">TEXTBUB<h1>
+					<img class="project" src="imgs/textbub2.jpg" alt="simple" />
+				</a>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<a href="mailto:ariingber@gmail.com">
+					<h1 class="ari">GROUP-CRIT<h1>
+					<img class="project" src="imgs/groupcrit2.JPG" alt="simple" />
+				</a>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<a href="http://ariingber.github.io/pixelouge/">
+					<h1 class="ari">PIXELOGUE<h1>
+					<img class="project" src="imgs/pixelogue.jpg" alt="simple" />
+				</a>
+			</div>
+		</div>
+		<div class="slide">
+			<div class="intro">
+				<a href="http://45.55.179.210/">
+					<h1 class="ari">GIT GARDEN<h1>
+					<img class="project" src="imgs/gitgarden2.jpeg" alt="simple" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<a href="https://docs.google.com/document/d/1quOcZo-LtIHFnd9zrU1B1zQA_latgon3J0Wf6j3hUBk">
+				<img class="resume" src="imgs/res2.JPG" alt="simple" />
+			</a>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<a href="mailto:ariingber@gmail.com"><h2 class="underari" style="margin-top:-125px;">ariingber@gmail.com<h2></a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
