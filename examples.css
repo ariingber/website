@@ -76,7 +76,8 @@ h2 {
 }
 
 .project {
-  width: 400px;
+  margin-top: 10px;
+  width: 375px;
   padding:1px;
   border:1px solid black;
   background-color:#d95c5c;
